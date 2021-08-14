@@ -10,7 +10,7 @@ export const fetchCampsites = () => dispatch => {
                     return response;
                 } else {
                     const error = new Error(`Error ${response.status}: ${response.statusText}`)
-                    error.repsonse = response;
+                    error.response = response;
                     throw error;
                 }
             },
@@ -45,7 +45,7 @@ export const fetchComments = () => dispatch => {
                     return response;
                 } else {
                     const error = new Error(`Error ${response.status}: ${response.statusText}`)
-                    error.repsonse = response;
+                    error.response = response;
                     throw error;
                 }
             },
@@ -119,7 +119,7 @@ export const fetchPromotions = () => dispatch => {
                     return response;
                 } else {
                     const error = new Error(`Error ${response.status}: ${response.statusText}`)
-                    error.repsonse = response;
+                    error.response = response;
                     throw error;
                 }
             },
